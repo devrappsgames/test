@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRAG</title>
+
+    <style>
+        *{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+            background-color: #010506;
+            border:4px #e35f21 solid;
+            height:45vw;
+
+            animation-name: border;
+            animation-timing-function: all ease-in-out;
+            animation-iteration-count: infinite;
+            animation-duration: 16s;
+}
+
+@keyframes border {
+    40%{
+        border:4px white solid;
+        
+    }
+    70%{
+        border:4px crimson solid;
+        
+    }
+}
+        
+header{
+    position:relative;
+    top:-5px;
+    margin-top: 10px;
+    border:1px black solid;
+    height: 57px;
+    width:99.3%;
+    display: flex;
+   
+    align-items: center;
+    z-index: 200;
+    
+    
+   
+    
+}
+
+
+
+.navcontainer{
+    background-color: #e35f21 ;
+    background-color: white ;
+    border-radius: 70px;
+    /* border:2px yellow solid; */
+    display: inline-block;
+    width:500px;
+    height: 40px;
+    font-size: smaller;
+   position: fixed;
+   right: 368px;
+   z-index: -1;
+
+   animation-name:color;
+  animation-timing-function: all ease-in-out;
+  animation-duration: 0.9s;
+  /* animation-fill-mode: backwards; */
+  animation-iteration-count: 1;
+ }
+
+
+
+ .navcontainer ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 84%;
+    /* border: 2px red solid; */
+    border-radius: 30px;
+   list-style-type: none;
+
+   
+   
+}
+
+.navcontainer li{
+    display: inline;
+    margin:-2px 15px;
+}
+
+
+.navcontainer a{
+    text-decoration: none;
+    color:black;
+}
+.navcontainer a:hover{
+    text-decoration: overline black 2px;
+    color:coral;
+     transition: all;
+     transition-timing-function: all ease-in-out;
+     transition-duration: 0.3s;
+     font-weight: bold;
+
+}
+
+
+
+
+ .logo{
+    height:400px;
+    width:400px;
+    /* border:white 2px solid; */
+    position: fixed;
+    left:33.5vw;
+    top:100px;
+
+    background: url("img/Logo.jpg")no-repeat center center/contain;
+
+    animation-name:slide;
+  animation-timing-function: all ease-in-out;
+  animation-duration: 5s;
+  /* animation-fill-mode: backwards; */
+  animation-iteration-count: 1;
+    
+ }
+
+ @keyframes slide{
+    from{
+        width:0px;
+        
+    }
+    to{
+        width: 400px;
+        
+    }
+ }
+
+
+ 
+ @keyframes color{
+    from{
+       background-color: black;
+       top:-10px;
+        
+    }
+    to{
+        background-color: white;
+        top:39px;
+    }
+ }
+    </style>
+</head>
+<body>
+    <header>
+   
+           <div class="navcontainer">
+               
+               <ul>
+                <li><a href = "home.html">Home</a></li>
+                <li><a href = "">Services</a></li>
+                <li><a href = "">Request</a></li>
+                <li><a href = "">AboutUs</a></li>
+                <li><a href = "">Products</a></li>
+               </ul>
+               
+           </div>
+       
+     </header>
+      
+     <div class="logo">
+
+     </div>
+</body>
+</html>
